@@ -66,13 +66,15 @@ MODEL GRAPH:
 
 Program
 ```
-// GENERATION OF FM (Scilab)
-Am = 18.3;        // Message amplitude
-Fm = 417;         // Message frequency (Hz)
-B  = 6.3;         // Modulation index (phase deviation here)
-Ac = 19;          // Carrier amplitude
-Fc = 4170;        // Carrier frequency (Hz)
-Fs = 41700;       // Sampling frequency
+// GENERATION OF FM SIGNAL (Scilab)
+
+// Parameters
+Am = 14;        // Message amplitude (from table)
+Fm = 10;        // Message frequency (Hz)
+B  = 6.3;       // Modulation index
+Ac = 28;        // Carrier amplitude (Am * 2)
+Fc = 100;       // Carrier frequency (Fm * 10)
+Fs = 1000;      // Sampling frequency (Fc * 10)
 T  = 0:1/Fs:2/Fm; // Time vector (two cycles of message)
 
 // Message signal
@@ -95,12 +97,14 @@ subplot(3,1,3);
 plot(T, efm);
 xtitle("FM Signal");
 xgrid();
+
 ```
 
 
 Output Waveform
 
-<img width="959" height="535" alt="image" src="https://github.com/user-attachments/assets/0be74ff1-cd35-4f19-882a-f7a7dfa72c29" />
+<img width="957" height="539" alt="image" src="https://github.com/user-attachments/assets/0fbaae31-25d0-4d0c-9e83-306eb4bfcdf4" />
+
 
 
 Tabulation
