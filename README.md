@@ -66,44 +66,40 @@ MODEL GRAPH:
 
 Program
 ```
-// GENERATION OF FM SIGNAL (Scilab)
-
-// Parameters
-Am = 14;        // Message amplitude (from table)
-Fm = 10;        // Message frequency (Hz)
-B  = 6.3;       // Modulation index
-Ac = 28;        // Carrier amplitude (Am * 2)
-Fc = 100;       // Carrier frequency (Fm * 10)
-Fs = 1000;      // Sampling frequency (Fc * 10)
-T  = 0:1/Fs:2/Fm; // Time vector (two cycles of message)
-
-// Message signal
-em = Am * cos(2*%pi*Fm*T);
+Ac=20.8;
+fc=4300;
+Am=10.4;
+fm=430;
+fs=50000;
+t=0:1/fs:2/fm;
+beta=3.6;
+Em=Am*cos(2*3.14*fm*t);
 subplot(3,1,1);
-plot(T, em);
-xtitle("Message Signal");
-xgrid();
-
-// Carrier signal
-ec = Ac * cos(2*%pi*Fc*T);
+plot(t,Em);
+xlabel("Time(s)");
+ylabel("Amplitude");
+title("Message Signal m(t)");
+Ec=Ac*cos(2*3.14*fc*t);
 subplot(3,1,2);
-plot(T, ec);
-xtitle("Carrier Signal");
-xgrid();
-
-// FM signal
-efm = Ac * cos((2*%pi*Fc*T) + (B * sin(2*%pi*Fm*T)));
+plot(t,Ec);
+xlabel("Time(s)");
+ylabel("Amplitude");
+title("Carrier Signal c(t)");
+Efm=Ac*cos(2*3.14*fc*t+beta*sin(2*3.14*fm*t));
 subplot(3,1,3);
-plot(T, efm);
-xtitle("FM Signal");
-xgrid();
+plot(t,Efm);
+xlabel("Time(s)");
+ylabel("Amplitude");
+title("FM Modulated Signal (USB)");
+
 
 ```
 
 
 Output Waveform
 
-<img width="957" height="539" alt="image" src="https://github.com/user-attachments/assets/0fbaae31-25d0-4d0c-9e83-306eb4bfcdf4" />
+<img width="1918" height="1142" alt="image" src="https://github.com/user-attachments/assets/c836518e-16d4-49bd-9d41-acc0e57140e6" />
+
 
 
 
