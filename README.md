@@ -104,10 +104,14 @@ Output Waveform
 
 
 Tabulation
+![WhatsApp Image 2025-10-09 at 16 08 43_58f82ade](https://github.com/user-attachments/assets/50e3bad2-42af-49f6-8981-828eb2e8612c)
+
 
 
 
 Calculation
+![WhatsApp Image 2025-10-09 at 16 09 01_84e62d65](https://github.com/user-attachments/assets/5d031929-03f7-4d30-a2d2-4efc177a2482)
+
 
 
 
