@@ -116,6 +116,12 @@ Calculation
 
 
 
+
+
+
+
+
+
 ![WhatsApp Image 2025-10-09 at 16 09 01_84e62d65](https://github.com/user-attachments/assets/5d031929-03f7-4d30-a2d2-4efc177a2482)
 ![WhatsApp Image 2025-10-09 at 16 17 10_6ac39bac](https://github.com/user-attachments/assets/49c33926-7809-4c0b-930a-bcd041bb3a71)
 
@@ -134,6 +140,11 @@ Modulation Index Theoretical	=0.5
 RESULT:
 
 Thus, the frequency modulation and demodulation is successfully done and the output is experimentally verified.
+
+
+
+
+
 ![WhatsApp Image 2025-11-22 at 10 47 49 PM](https://github.com/user-attachments/assets/e06ef815-d26c-4d14-b45e-ab232c8d68b8)
 
 
